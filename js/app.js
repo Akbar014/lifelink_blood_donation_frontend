@@ -236,7 +236,7 @@ const handleLogin = (event) => {
             localStorage.setItem("user", data.user);
             localStorage.setItem("user_id", data.user_id);
             document.getElementById("loginalert").innerHTML = "Successfull Logged in ";
-            window.location.href = "http://127.0.0.1:5500/index.html";
+            window.location.href = "https://akbar014.github.io/lifelink_blood_donation_frontend";
             
             
           }else{
