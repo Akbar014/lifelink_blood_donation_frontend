@@ -2,7 +2,7 @@ const userProfile = () => {
     const user_id = localStorage.getItem("user_id");
     const token = localStorage.getItem('token'); // Ensure token is defined here
     
-    fetch(`http://127.0.0.1:8000/donate_blood/users/${user_id}`, {
+    fetch(`https://lifelink-4bu4.onrender.com/donate_blood/users/${user_id}`, {
         method: 'GET', 
         headers: {
             'Content-Type': 'application/json',
@@ -73,7 +73,7 @@ const editProfileInfo = () => {
 
     console.log(profileInfo);
 
-    fetch(`https://akbar014.github.io/lifelink_blood_donation_frontend/donate_blood/users/${user_id}/`, {
+    fetch(`https://lifelink-4bu4.onrender.com/donate_blood/donate_blood/users/${user_id}/`, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json',
